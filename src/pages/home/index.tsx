@@ -6,8 +6,7 @@ import styles from "./styles.module.css";
 import { FaPlay } from "react-icons/fa";
 
 export default function Home() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [timeLeft, setTimeLeft] = useState({
+  const [timeLeft] = useState({
     days: "00",
     hours: "00",
     minutes: "00",
