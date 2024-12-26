@@ -7,7 +7,7 @@ import ingilizce from "@/assets/ingilizce.jpg";
 export default function Header() {
   const navItem: string[] = ["about", "roadMap", "token", "team", "faq", "blog", "contact"];
   return (
-    <section className="fluid gridContainer bg-black/10 backdrop-blur-sm">
+    <section className="fluid gridContainer bg-white/10 backdrop-blur-sm">
       <header className="flex items-center justify-between gap-8 py-5">
         <Link to={"/"}>
           <img src={logo} alt="c1 coin logo" className="max-h-14" />
