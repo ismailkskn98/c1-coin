@@ -1,0 +1,10 @@
+.cardBg {
+  background: rgb(163, 125, 76);
+  background: linear-gradient(90deg, rgba(163, 125, 76, 1) 11%, rgba(251, 249, 177, 1) 53%, rgba(194, 160, 116, 1) 81%, rgba(229, 199, 103, 1) 99%);
+}
+
+.cardTop {
+  background: rgb(246, 241, 172);
+  background: radial-gradient(circle, rgba(246, 241, 172, 1) 0%, rgba(205, 185, 125, 1) 51%, rgba(174, 134, 103, 1) 100%);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}

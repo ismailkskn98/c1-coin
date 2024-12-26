@@ -4,8 +4,8 @@ import { GrSend } from "react-icons/gr";
 
 export default function Footer() {
   return (
-    <section className="fluid gridContainer bg-white/15 backdrop-blur-md py-5">
-      <footer className="w-full flex flex-col items-center text-white text-lg italic pt-2 gap-8">
+    <section className="fluid gridContainer bg-white/15 backdrop-blur-md">
+      <footer className="w-full flex flex-col items-center text-white text-lg italic pt-10 pb-5 gap-8">
         <article className="w-full flex items-start justify-between gap-12">
           <div className="flex flex-col items-start gap-8">
             <div className="flex flex-col items-start gap-2">

@@ -9,10 +9,12 @@ export default function Header() {
   return (
     <section className="fluid gridContainer bg-black/10 backdrop-blur-sm">
       <header className="flex items-center justify-between gap-8 py-5">
-        <img src={logo} alt="c1 coin logo" className="max-h-14" />
+        <Link to={"/"}>
+          <img src={logo} alt="c1 coin logo" className="max-h-14" />
+        </Link>
         <nav className="flex-1 flex items-center gap-8">
           {navItem.map((item, index) => (
-            <NavLink key={index} to={`/${item}`} className="capitalize font-semibold hover:text-red-700 transition-all duration-300">
+            <NavLink key={index} to={`/${item}`} className="capitalize font-semibold hover:text-white transition-all duration-300">
               {item}
             </NavLink>
           ))}
