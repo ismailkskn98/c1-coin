@@ -3,7 +3,9 @@ import Blog from "@/pages/blog";
 import Contact from "@/pages/contact";
 import Faq from "@/pages/faq";
 import Home from "@/pages/home";
+import Login from "@/pages/login";
 import NotFound from "@/pages/NotFound";
+import Register from "@/pages/register";
 import RoadMap from "@/pages/roadMap";
 import Team from "@/pages/team";
 import Token from "@/pages/token";
@@ -20,6 +22,8 @@ const AppRouter = () => {
       <Route path="/faq" element={<Faq />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

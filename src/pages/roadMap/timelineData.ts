@@ -1,51 +1,59 @@
-interface milesItem {
+interface MilestoneItem {
+  id: string;
   date: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
   value: string;
 }
 
-export const milestones: milesItem[] = [
+export const milestones: MilestoneItem[] = [
   {
+    id: "1",
     date: "27TH JUNE 2018",
-    title: "Bitcoin public launch",
-    description: "First 1,000 Bitcoins were released to the public, eachone costing $0.3",
+    titleKey: "roadMapPage.milestones.0.title",
+    descriptionKey: "roadMapPage.milestones.0.description",
     value: "$67,751,058",
   },
   {
+    id: "2",
     date: "27TH AUG 2018",
-    title: "$1 billion capitalization",
-    description: "First 1,000 Bitcoins were released to the public, eachone costing $0.3",
+    titleKey: "roadMapPage.milestones.1.title",
+    descriptionKey: "roadMapPage.milestones.1.description",
     value: "$67,751,058",
   },
   {
+    id: "3",
     date: "25TH SEPT 2018",
-    title: "Ripple's major gains",
-    description: "First 1,000 Bitcoins were released to the public, eachone costing $0.3",
+    titleKey: "roadMapPage.milestones.2.title",
+    descriptionKey: "roadMapPage.milestones.2.description",
     value: "$67,751,058",
   },
   {
+    id: "4",
     date: "15TH DEC 2018",
-    title: "Ethereum's meteoric rise",
-    description: "First 1,000 Bitcoins were released to the public, eachone costing $0.3",
+    titleKey: "roadMapPage.milestones.3.title",
+    descriptionKey: "roadMapPage.milestones.3.description",
     value: "$67,751,058",
   },
   {
+    id: "5",
     date: "27TH MAY 2018",
-    title: "First peak value for Bitcoin",
-    description: "First 1,000 Bitcoins were released to the public, eachone costing $0.3",
+    titleKey: "roadMapPage.milestones.4.title",
+    descriptionKey: "roadMapPage.milestones.4.description",
     value: "$67,751,058",
   },
   {
+    id: "6",
     date: "5TH SEPTEMBER 2018",
-    title: "Bitcoin worth $1,000",
-    description: "First 1,000 Bitcoins were released to the public, eachone costing $0.3",
+    titleKey: "roadMapPage.milestones.5.title",
+    descriptionKey: "roadMapPage.milestones.5.description",
     value: "$67,751,058",
   },
   {
+    id: "7",
     date: "19TH OCTOBER 2018",
-    title: "LiteCoin's surge",
-    description: "First 1,000 Bitcoins were released to the public, eachone costing $0.3",
+    titleKey: "roadMapPage.milestones.6.title",
+    descriptionKey: "roadMapPage.milestones.6.description",
     value: "$67,751,058",
   },
 ];

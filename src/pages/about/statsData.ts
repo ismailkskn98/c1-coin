@@ -2,7 +2,7 @@ interface StatsItem {
   id: number;
   value: number;
   unit?: string;
-  description: string;
+  translationKey: string;
 }
 
 export const statsData: StatsItem[] = [
@@ -10,23 +10,23 @@ export const statsData: StatsItem[] = [
     id: 1,
     value: 50,
     unit: "$",
-    description: "bilion USD as expected revenue coins by 2020",
+    translationKey: "aboutPage.stats.revenue",
   },
   {
     id: 2,
     value: 150,
-    description: "milion potential clients worldwide",
+    translationKey: "aboutPage.stats.clients",
   },
   {
     id: 3,
     value: 20,
     unit: "%",
-    description: "no borders for international payments",
+    translationKey: "aboutPage.stats.noBorders",
   },
   {
     id: 4,
     value: 10,
     unit: "x",
-    description: "faster transaction speed",
+    translationKey: "aboutPage.stats.speed",
   },
 ];
