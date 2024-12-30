@@ -4,6 +4,7 @@ import { ChangeEvent, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { z } from "zod";
 import BeatLoader from "react-spinners/BeatLoader";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function Login() {
   const { t } = useTranslation();
@@ -59,8 +60,9 @@ export default function Login() {
           e.preventDefault();
           handleSubmit();
         }}
-        className="bg-black/30 backdrop-blur-md px-8 py-10 w-1/3 rounded-md flex flex-col items-center gap-10"
+        className="relative bg-black/30 backdrop-blur-md px-8 py-10 w-1/3 rounded-md flex flex-col items-center gap-10 border border-solid border-black/10"
       >
+        <BorderBeam size={250} duration={12} delay={9} />
         <h2 className="text-white font-bold text-6xl mb-3">{t("login.title")}</h2>
         <div className="relative w-full flex flex-col gap-2 items-start">
           <Input
@@ -82,13 +84,9 @@ export default function Login() {
             onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange("password", e.target.value)}
             className="bg-black/60 backdrop-blur-sm focus:border-none border-none outline-none focus:outline-none py-5 placeholder:text-white text-white w-full"
           />
-          {errors.password && (
-            <p className="absolute left-0 -bottom-6 font-bold text-sm text-red-500">*{errors.password}</p>
-          )}
+          {errors.password && <p className="absolute left-0 -bottom-6 font-bold text-sm text-red-500">*{errors.password}</p>}
         </div>
-        <Button className="uppercase text-lg self-center bg-black/60 backdrop-blur-sm px-6 py-5">
-          {loading ? <BeatLoader color="#ffffff" /> : t("login.button")}
-        </Button>
+        <Button className="relative uppercase text-lg self-center bg-black/60 backdrop-blur-sm px-6 py-5">{loading ? <BeatLoader color="#ffffff" /> : t("login.button")} </Button>
       </form>
     </section>
   );

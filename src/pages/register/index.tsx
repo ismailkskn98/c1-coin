@@ -83,9 +83,7 @@ export default function Register() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange("firstname", e.target.value)}
               className="bg-black/60 backdrop-blur-sm focus:border-none border-none outline-none focus:outline-none py-5 placeholder:text-white text-white w-full"
             />
-            {errors.firstname && (
-              <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.firstname}</p>
-            )}
+            {errors.firstname && <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.firstname}</p>}
           </div>
           <div className="relative w-full flex flex-col gap-2 items-start">
             <Input
@@ -96,9 +94,7 @@ export default function Register() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange("lastname", e.target.value)}
               className="bg-black/60 backdrop-blur-sm focus:border-none border-none outline-none focus:outline-none py-5 placeholder:text-white text-white w-full"
             />
-            {errors.lastname && (
-              <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.lastname}</p>
-            )}
+            {errors.lastname && <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.lastname}</p>}
           </div>
         </div>
         <div className="w-full flex items-center justify-between gap-5">
@@ -111,9 +107,7 @@ export default function Register() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange("email", e.target.value)}
               className="bg-black/60 backdrop-blur-sm focus:border-none border-none outline-none focus:outline-none py-5 placeholder:text-white text-white w-full"
             />
-            {errors.email && (
-              <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.email}</p>
-            )}
+            {errors.email && <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.email}</p>}
           </div>
           <div className="relative w-full flex flex-col gap-2 items-start">
             <Input
@@ -124,9 +118,7 @@ export default function Register() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange("number", e.target.value)}
               className="bg-black/60 backdrop-blur-sm focus:border-none border-none outline-none focus:outline-none py-5 placeholder:text-white text-white w-full"
             />
-            {errors.number && (
-              <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.number}</p>
-            )}
+            {errors.number && <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.number}</p>}
           </div>
         </div>
         <div className="w-full flex items-center justify-between gap-5">
@@ -139,9 +131,7 @@ export default function Register() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange("password", e.target.value)}
               className="bg-black/60 backdrop-blur-sm focus:border-none border-none outline-none focus:outline-none py-5 placeholder:text-white text-white w-full"
             />
-            {errors.password && (
-              <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.password}</p>
-            )}
+            {errors.password && <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.password}</p>}
           </div>
           <div className="relative w-full flex flex-col gap-2 items-start">
             <Input
@@ -152,14 +142,10 @@ export default function Register() {
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange("confirmPassword", e.target.value)}
               className="bg-black/60 backdrop-blur-sm focus:border-none border-none outline-none focus:outline-none py-5 placeholder:text-white text-white w-full"
             />
-            {errors.confirmPassword && (
-              <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.confirmPassword}</p>
-            )}
+            {errors.confirmPassword && <p className="absolute left-[2px] -bottom-5 font-bold text-xs text-red-500">*{errors.confirmPassword}</p>}
           </div>
         </div>
-        <Button className="uppercase text-lg self-center bg-black/60 backdrop-blur-sm px-6 py-5">
-          {t("registerButton")}
-        </Button>
+        <Button className="uppercase text-lg self-center bg-black/60 backdrop-blur-sm px-6 py-5">{t("registerButton")}</Button>
       </form>
     </section>
   );
